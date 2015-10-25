@@ -1,0 +1,26 @@
+<html>
+        <head>
+                <title>command line</title>
+        </head>
+        <body>
+<h2>Process</h2>
+{% for line in process %}
+    {{ line.decode('utf-8') }} </br>
+   {% endfor %}
+<hr>
+<h2> Calendar </h2>
+{% for line in cal %}
+    {{ line.decode('utf-8') }} </br>
+   {% endfor %}
+<hr>
+<h2> Load </h2>
+{% for line in uptime %}
+    {{ line.decode('utf-8') }} </br>
+   {% endfor %}
+<hr>
+<h2> Date </h2>
+{% for line in date %}
+    {{ line.decode('utf-8') }} </br>
+   {% endfor %}
+        </body>
+</html>
